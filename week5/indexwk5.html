@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -64,10 +64,16 @@
             animation: fadeIn 1s ease-in-out;
         }
     </style>
+
+      <script>
+        function myFunction() {
+            document.getElementById("magic").innerHTML = "Anna likes ice creams!";
+        }
+    </script>
 </head>
+
 <body>
     <h1 class="label fadeIn">✧･ﾟ『Know more about me!』･ﾟ: ✧･ﾟ</h1>
-
     <div class="info-container fadeIn">
         <img src="C:\Users\anami\OneDrive\Desktop\lab\lab2\week3\anna.jpg" alt="anna" width="150px" height="150px">
         <p><b><u>Fullname:</b></u> Anamika Nepomuceno</p>
@@ -103,7 +109,13 @@
             volunteered in tech-related events.</center></p>
     <br>
     <br>
+
+    <p id="magic"><b><u><center>WANNA KNOW WHATS ANNA'S FAVORITE FOOD?</b></u></center></p>
+    <button type="button" onclick="myFunction()">YES!</button>
+
+    <BR>
     <h3 class="fadeIn"><b><center>⋆.ೃ࿔*:･ﾟ『PICTURES BEHIND ANNA'S LIFE』⋆.ೃ࿔*:･ﾟ </center> </b></h3>
     <center><img src="aboutanna.jpg" alt="about anna" width="700px" class="fadeIn"></center>
+
 </body>
 </html>
