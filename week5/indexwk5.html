@@ -67,7 +67,14 @@
 
       <script>
         function myFunction() {
-            document.getElementById("magic").innerHTML = "Anna likes ice creams!";
+           
+            let likesIceCream = true;
+
+            if (likesIceCream) {
+                document.getElementById("magic").innerHTML = "Anna likes ice creams!";
+            } else {
+                document.getElementById("magic").innerHTML = "Anna doesn't like ice creams!";
+            }
         }
     </script>
 </head>
@@ -110,10 +117,10 @@
     <br>
     <br>
 
-    <p id="magic"><b><u><center>WANNA KNOW WHATS ANNA'S FAVORITE FOOD?</b></u></center></p>
+<p id="magic"><b><u><center>WANNA KNOW WHAT'S ANNA'S FAVORITE FOOD?</b></u></center></p>
     <button type="button" onclick="myFunction()">YES!</button>
-
-    <BR>
+    
+    <br>
     <h3 class="fadeIn"><b><center>⋆.ೃ࿔*:･ﾟ『PICTURES BEHIND ANNA'S LIFE』⋆.ೃ࿔*:･ﾟ </center> </b></h3>
     <center><img src="aboutanna.jpg" alt="about anna" width="700px" class="fadeIn"></center>
 
