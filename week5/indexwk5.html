@@ -13,7 +13,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            
         }
         .label {
             background-color: white;
@@ -64,21 +63,25 @@
             animation: fadeIn 1s ease-in-out;
         }
     </style>
-
-      <script>
+    <script>
         function myFunction() {
-           
             let likesIceCream = true;
-
             if (likesIceCream) {
                 document.getElementById("magic").innerHTML = "Anna likes ice creams!";
             } else {
                 document.getElementById("magic").innerHTML = "Anna doesn't like ice creams!";
             }
         }
+        function myArray() {
+            // Array Declaration
+            const flavor = ["chocolate", "cottoncandy", "caramel"];
+            // Randomly select a flavor from the array
+            const randomFlavor = flavor[Math.floor(Math.random() * flavor.length)];
+            // Display the selected flavor in the yummy paragraph
+            document.getElementById("yummy").innerHTML = "Anna's favorite flavor is: " + randomFlavor;
+        }
     </script>
 </head>
-
 <body>
     <h1 class="label fadeIn">✧･ﾟ『Know more about me!』･ﾟ: ✧･ﾟ</h1>
     <div class="info-container fadeIn">
@@ -116,13 +119,15 @@
             volunteered in tech-related events.</center></p>
     <br>
     <br>
-
-<p id="magic"><b><u><center>WANNA KNOW WHAT'S ANNA'S FAVORITE FOOD?</b></u></center></p>
+    <p id="magic"><b><u><center>WANNA KNOW WHAT'S ANNA'S FAVORITE FOOD?</b></u></center></p>
     <button type="button" onclick="myFunction()">YES!</button>
-    
+       <br>
+          <br>
+    <p id="yummy"><b><u><center>WANNA KNOW WHAT'S ANNA'S FAVORITE FLAVOR??</b></u></center></p>
+    <button type="button" onclick="myArray()">YES!</button>
+    <br>
     <br>
     <h3 class="fadeIn"><b><center>⋆.ೃ࿔*:･ﾟ『PICTURES BEHIND ANNA'S LIFE』⋆.ೃ࿔*:･ﾟ </center> </b></h3>
     <center><img src="aboutanna.jpg" alt="about anna" width="700px" class="fadeIn"></center>
-
 </body>
 </html>
