@@ -62,6 +62,26 @@
         .fadeIn {
             animation: fadeIn 1s ease-in-out;
         }
+         .box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e64a4a;
+        }
     </style>
     <script>
         function myFunction() {
@@ -128,24 +148,31 @@
     <br>
     
     <button onclick="showAlert()">CLICK FOR A SUPRISE</button>
-    
     <br>
-    <p id="magic"><b><u><center>WANNA KNOW WHAT'S ANNA'S FAVORITE FOOD?</b></u></center></p>
-    <button type="button" onclick="myFunction()">YES!</button>
-       <br>
-          <br>
-    <p id="yummy"><b><u><center>WANNA KNOW WHAT'S ANNA'S FAVORITE FLAVOR??</b></u></center></p>
-    <button type="button" onclick="myArray()">YES!</button>
     <br>
+     <div class="box fadeIn">
+        <p id="secret"><b>Q and A</b></p>
+         </div>
+      <div class="box fadeIn">
+        <p id="magic"><b>WANNA KNOW WHAT'S ANNA'S FAVORITE FOOD?</b></p>
+        <button type="button" onclick="myFunction()">YES, SHOW ME!</button>
+    </div>
+   
+    <div class="box fadeIn">
+        <p id="yummy"><b>WANNA KNOW WHAT'S ANNA'S FAVORITE FLAVOR??</b></p>
+        <button type="button" onclick="myArray()">YES, SURPRISE ME!</button>
+    </div>
     <br>
     <h3 class="fadeIn"><b><center>⋆.ೃ࿔*:･ﾟ『PICTURES BEHIND ANNA'S LIFE』⋆.ೃ࿔*:･ﾟ </center> </b></h3>
     <center><img src="aboutanna.jpg" alt="about anna" width="700px" class="fadeIn"></center>
 
 <br>
 <br>
-<p><b><u>OH NO! WHAT TIME IS IT?</u></b></p> 
-      <center><p id="currentDateUTC"></p></center>
-  <button type="button" onclick="displayCurrentDate()">Show Current Date</button>
+<div class="box fadeIn">
+        <p><b>OH NO! WHAT TIME IS IT?</b></p>
+        <button type="button" onclick="displayCurrentDate()">SHOW CURRENT TIME</button>
+        <center><p id="currentDateUTC"></p></center>
+    </div>
     
 <br>
 <br>
