@@ -80,6 +80,11 @@
             // Display the selected flavor in the yummy paragraph
             document.getElementById("yummy").innerHTML = "Anna's favorite flavor is: " + randomFlavor;
         }
+        
+         function displayCurrentDate() {
+            const currentDate = new Date();
+            document.getElementById("currentDateUTC").innerHTML = "UTC Format: " + currentDate.toUTCString();
+        }
     </script>
 </head>
 <body>
@@ -129,5 +134,17 @@
     <br>
     <h3 class="fadeIn"><b><center>⋆.ೃ࿔*:･ﾟ『PICTURES BEHIND ANNA'S LIFE』⋆.ೃ࿔*:･ﾟ </center> </b></h3>
     <center><img src="aboutanna.jpg" alt="about anna" width="700px" class="fadeIn"></center>
+
+<br>
+<br>
+<p><b><u>OH NO! WHAT TIME IS IT?</u></b></p> 
+      <center><p id="currentDateUTC"></p></center>
+  <button type="button" onclick="displayCurrentDate()">Show Current Date</button>
+    
+<br>
+<br>
+
+
+
 </body>
 </html>
