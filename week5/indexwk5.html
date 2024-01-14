@@ -82,6 +82,19 @@
         button:hover {
             background-color: #e64a4a;
         }
+        .box-container {
+            display: flex;
+            justify-content: center; /* Center the boxes horizontally */
+            margin-top: 20px;
+        }
+        .box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 0 10px; /* Add margin for space between the boxes */
+        }
     </style>
     <script>
         function myFunction() {
@@ -103,7 +116,7 @@
         
          function displayCurrentDate() {
             const currentDate = new Date();
-            document.getElementById("currentDateUTC").innerHTML = "UTC Format: " + currentDate.toUTCString();
+            document.getElementById("currentDateUTC").innerHTML =currentDate.toUTCString();
         }
         function showAlert() {
             alert('Embrace the strength in your laughter, for its the anthem of a joyous spirit—where resilience meets happiness with a grin😊💕');
@@ -147,30 +160,33 @@
             volunteered in tech-related events.</center></p>
     <br>
     
+	 <h3 class="fadeIn"><b><center>⋆.ೃ࿔*:･ﾟ『PICTURES BEHIND ANNA'S LIFE』⋆.ೃ࿔*:･ﾟ </center> </b></h3>
+    <center><img src="itsanna.jpg" alt="about anna" width="700px" class="fadeIn"></center>
+<br>
     <button onclick="showAlert()">CLICK FOR A SUPRISE</button>
     <br>
     <br>
      <div class="box fadeIn">
         <p id="secret"><b>Q and A</b></p>
          </div>
-      <div class="box fadeIn">
-        <p id="magic"><b>WANNA KNOW WHAT'S ANNA'S FAVORITE FOOD?</b></p>
-        <button type="button" onclick="myFunction()">YES, SHOW ME!</button>
+      <div class="box-container fadeIn">
+        <div class="box">
+            <p id="magic"><b>WANNA KNOW WHAT'S ANNA'S FAVORITE FOOD?</b></p>
+            <button type="button" onclick="myFunction()">YES, SHOW ME!</button>
+        </div>
+
+        <div class="box">
+            <p id="yummy"><b>WANNA KNOW WHAT'S ANNA'S FAVORITE FLAVOR??</b></p>
+            <button type="button" onclick="myArray()">YES, SURPRISE ME!</button>
+        </div>
     </div>
-   
-    <div class="box fadeIn">
-        <p id="yummy"><b>WANNA KNOW WHAT'S ANNA'S FAVORITE FLAVOR??</b></p>
-        <button type="button" onclick="myArray()">YES, SURPRISE ME!</button>
-    </div>
-    <br>
-    <h3 class="fadeIn"><b><center>⋆.ೃ࿔*:･ﾟ『PICTURES BEHIND ANNA'S LIFE』⋆.ೃ࿔*:･ﾟ </center> </b></h3>
-    <center><img src="aboutanna.jpg" alt="about anna" width="700px" class="fadeIn"></center>
+    
 
 <br>
 <br>
 <div class="box fadeIn">
         <p><b>OH NO! WHAT TIME IS IT?</b></p>
-        <button type="button" onclick="displayCurrentDate()">SHOW CURRENT TIME</button>
+        <button type="button" onclick="displayCurrentDate()">SHOW ME THE TIME</button>
         <center><p id="currentDateUTC"></p></center>
     </div>
     
