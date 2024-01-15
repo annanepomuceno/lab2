@@ -16,10 +16,11 @@
         }
         .label {
             background-color: white;
-            padding: 10px;
+            padding: 15px;
             border-radius: 10px;
             margin-top: 20px;
             text-align: center;
+            font-size: 24px; 
         }
         .info-container {
             display: flex;
@@ -37,20 +38,18 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 10px;
         }
-        h1 {
+        h1, h2, h3 {
             text-align: center;
             color: #ff6b6b;
+            font-size: 22px; 
         }
         p {
             color: #4b4b4b;
+            font-size: 18px; 
+            text-align: center;
+            margin-bottom: 10px;
         }
-        h2 {
-            color: #5f27cd;
-        }
-        h3 {
-            color: #2ecc71;
-        }
-        /* Add some cute animations */
+       
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -62,21 +61,22 @@
         .fadeIn {
             animation: fadeIn 1s ease-in-out;
         }
-         .box {
+        .box {
             background-color: white;
             border-radius: 10px;
             padding: 20px;
             margin-top: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            font-size: 18px; 
         }
         button {
             background-color: #ff6b6b;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border: none;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 18px;
             cursor: pointer;
         }
         button:hover {
@@ -84,7 +84,7 @@
         }
         .box-container {
             display: flex;
-            justify-content: center; /* Center the boxes horizontally */
+            justify-content: center; 
             margin-top: 20px;
         }
         .box {
@@ -93,7 +93,8 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin: 0 10px; /* Add margin for space between the boxes */
+            margin: 0 10px; 
+            font-size: 18px; 
         }
     </style>
     <script>
@@ -106,15 +107,15 @@
             }
         }
         function myArray() {
-            // Array Declaration
+          
             const flavor = ["chocolate", "cottoncandy", "caramel"];
-            // Randomly select a flavor from the array
+            
             const randomFlavor = flavor[Math.floor(Math.random() * flavor.length)];
-            // Display the selected flavor in the yummy paragraph
+          
             document.getElementById("yummy").innerHTML = "Anna's favorite flavor is: " + randomFlavor;
         }
-        
-         function displayCurrentDate() {
+
+        function displayCurrentDate() {
             const currentDate = new Date();
             document.getElementById("currentDateUTC").innerHTML =currentDate.toUTCString();
         }
@@ -138,7 +139,7 @@
         Also, live in another country and have a stable life.</p>
     <p><b><u>Dreams wish to fulfill: </b></u> My dream is to be a successful person who can help my mother and sister
         have a better life<br> and live in a better country. It also helps many students learn new tech information
-        and innovation</p>
+        and innovation.</p>
     <h2 class="label fadeIn">✧･ﾟ『SCHOOL INFORMATION』･ ✧･ﾟ</h2>
     <p><u><b>Senior HighSchool Graduated:</b></u> Asia Pacific College</p>
     <p><u><b>College:</b></u> Asia Pacific College</p>
@@ -154,22 +155,21 @@
         which we learned in my grade 9 days.<br> Then, I started learning CSS, J.S., JAVA and more in my senior year,
         where we studied it in our programming subjects.</p>
     <h2 class="label fadeIn">⋆.ೃ࿔*:･『OTHER INTERESTING ASPECT OF MY LIFE』･⋆.ೃ࿔*:･ﾟ</h2>
-    <p> <center>I have been working on an organization in APC named APC-Microsoft Community for <br> four years since
+   <p><b>I have been working on an organization in APC named APC-Microsoft Community for <br> four years since
             senior high school. I have already done many events and talks where I<br> teach students about Microsoft
             apps and how to use them. I have been in several<br> significant events organized by Microsoft and
-            volunteered in tech-related events.</center></p>
+            volunteered in tech-related events</b></p>
     <br>
     
+    
+  
 	 <h3 class="fadeIn"><b><center>⋆.ೃ࿔*:･ﾟ『PICTURES BEHIND ANNA'S LIFE』⋆.ೃ࿔*:･ﾟ </center> </b></h3>
     <center><img src="itsanna.jpg" alt="about anna" width="700px" class="fadeIn"></center>
 <br>
     <button onclick="showAlert()">CLICK FOR A SUPRISE</button>
     <br>
     <br>
-     <div class="box fadeIn">
-        <p id="secret"><b>Q and A</b></p>
-         </div>
-      <div class="box-container fadeIn">
+    <div class="box-container fadeIn">
         <div class="box">
             <p id="magic"><b>WANNA KNOW WHAT'S ANNA'S FAVORITE FOOD?</b></p>
             <button type="button" onclick="myFunction()">YES, SHOW ME!</button>
@@ -180,20 +180,16 @@
             <button type="button" onclick="myArray()">YES, SURPRISE ME!</button>
         </div>
     </div>
-    
 
-<br>
-<br>
-<div class="box fadeIn">
+    <br>
+    <br>
+    <div class="box fadeIn">
         <p><b>OH NO! WHAT TIME IS IT?</b></p>
         <button type="button" onclick="displayCurrentDate()">SHOW ME THE TIME</button>
         <center><p id="currentDateUTC"></p></center>
     </div>
-    
-<br>
-<br>
 
-
-
+    <br>
+    <br>
 </body>
 </html>
