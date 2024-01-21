@@ -125,7 +125,19 @@
             margin: 0 10px; 
             font-size: 18px; 
         }
+
+        /* New style for the white box */
+        #story-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px; 
+        }
     </style>
+
     <script>
         function myFunction() {
             let likesIceCream = true;
@@ -151,6 +163,17 @@
         function showAlert() {
             alert('Embrace the strength in your laughter, for its the anthem of a joyous spirit—where resilience meets happiness with a grin😊💕');
         }
+        const person = {
+            lastName: " Nepomuceno",
+            city: " Makati",
+            zodiac: " Aquarius"
+        };
+
+        const storyText = "Anamika" + person.lastName + " was born in" + person.city + " on February 10, 2004, which her zodiac is" + person.zodiac;
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("story").textContent = storyText;
+        });
     </script>
 </head>
 <body>
@@ -193,15 +216,15 @@
         which we learned in my grade 9 days.<br> Then, I started learning CSS, J.S., JAVA and more in my senior year,
         where we studied it in our programming subjects.</p>
     <h2 class="label fadeIn">⋆.ೃ࿔*:･『OTHER INTERESTING ASPECT OF MY LIFE』･࿔*:･ﾟ</h2>
-   <p><b>I have been working on an organization in APC named APC-Microsoft Community for <br> four years since
+    <p><b>I have been working on an organization in APC named APC-Microsoft Community for <br> four years since
             senior high school. I have already done many events and talks where I<br> teach students about Microsoft
             apps and how to use them. I have been in several<br> significant events organized by Microsoft and
             volunteered in tech-related events</b></p>
     <br>
   
-	 <h3><b><center>⋆.ೃ࿔*:･ﾟ『PICTURES BEHIND ANNA'S LIFE』⋆.ೃ࿔ </center> </b></h3>
+    <h3><b><center>⋆.ೃ࿔*:･ﾟ『PICTURES BEHIND ANNA'S LIFE』⋆.ೃ࿔ </center> </b></h3>
     <center><img src="itsanna.jpg" alt="about anna" width="500px" class="fadeIn"></center>
-<br>
+    <br>
     <button onclick="showAlert()">CLICK FOR A SUPRISE</button>
     <br>
     <br>
@@ -215,6 +238,12 @@
             <p id="yummy"><b>WANNA KNOW WHAT'S ANNA'S FAVORITE FLAVOR??</b></p>
             <button type="button" onclick="myArray()">YES, SURPRISE ME!</button>
         </div>
+    </div>
+
+    <br>
+    <br>
+    <div id="story-container" class="fadeIn">
+        <p id="story"></p>
     </div>
 
     <br>
