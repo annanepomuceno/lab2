@@ -36,15 +36,15 @@
             margin-top: 20px;
             text-align: center;
             font-size: 24px; 
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow added */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .hello-text {
             font-size: 24px;
             font-weight: bold;
             text-align: center;
             margin-bottom: 10px;
-            color: #ffd700; /* Yellow color */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow properties */
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .info-container {
             display: flex;
@@ -126,7 +126,6 @@
             font-size: 18px; 
         }
 
-        /* New style for the white box */
         #story-container {
             background-color: white;
             border-radius: 10px;
@@ -136,43 +135,63 @@
             text-align: center;
             font-size: 18px; 
         }
+
+        /* New style for the sports box */
+        #sports-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
     </style>
 
     <script>
-        function myFunction() {
-            let likesIceCream = true;
-            if (likesIceCream) {
-                document.getElementById("magic").innerHTML = "Anna likes ice creams!";
-            } else {
-                document.getElementById("magic").innerHTML = "Anna doesn't like ice creams!";
-            }
-        }
-        function myArray() {
-          
-            const flavor = ["chocolate", "cottoncandy", "caramel"];
-            
-            const randomFlavor = flavor[Math.floor(Math.random() * flavor.length)];
-          
-            document.getElementById("yummy").innerHTML = "Anna's favorite flavor is: " + randomFlavor;
-        }
-
-        function displayCurrentDate() {
-            const currentDate = new Date();
-            document.getElementById("currentDateUTC").innerHTML =currentDate.toUTCString();
-        }
-        function showAlert() {
-            alert('Embrace the strength in your laughter, for its the anthem of a joyous spirit—where resilience meets happiness with a grin😊💕');
-        }
-        const person = {
-            lastName: " Nepomuceno",
-            city: " Makati",
-            zodiac: " Aquarius"
-        };
-
-        const storyText = "Anamika" + person.lastName + " was born in" + person.city + " on February 10, 2004, which her zodiac is" + person.zodiac;
-
         document.addEventListener("DOMContentLoaded", function() {
+            function myFunction() {
+                let likesIceCream = true;
+                if (likesIceCream) {
+                    document.getElementById("magic").innerHTML = "Anna likes ice creams!";
+                } else {
+                    document.getElementById("magic").innerHTML = "Anna doesn't like ice creams!";
+                }
+            }
+            function myArray() {
+                const flavor = ["chocolate", "cottoncandy", "caramel"];
+                const randomFlavor = flavor[Math.floor(Math.random() * flavor.length)];
+                document.getElementById("yummy").innerHTML = "Anna's favorite flavor is: " + randomFlavor;
+            }
+
+            function displayCurrentDate() {
+                const currentDate = new Date();
+                document.getElementById("currentDateUTC").innerHTML = currentDate.toUTCString();
+            }
+            function showAlert() {
+                alert('Embrace the strength in your laughter, for its the anthem of a joyous spirit—where resilience meets happiness with a grin😊💕');
+            }
+            const person = {
+                lastName: " Nepomuceno",
+                city: " Makati",
+                zodiac: " Aquarius"
+            };
+
+            const storyText = "Anamika" + person.lastName + " was born in" + person.city + " on February 10, 2004, which her zodiac is" + person.zodiac;
+
             document.getElementById("story").textContent = storyText;
+
+            class Sports {
+                constructor(name) {
+                    this.name = name;
+                }
+            }
+
+            const mySports1 = new Sports("Arnis martial arts");
+            const mySports2 = new Sports("Table tennis");
+
+            document.getElementById("sports").innerHTML =
+                "In my junior high school year, I used to play " + mySports1.name + " and " + mySports2.name;
         });
     </script>
 </head>
@@ -245,7 +264,9 @@
     <div id="story-container" class="fadeIn">
         <p id="story"></p>
     </div>
-
+ <div id="sports-box" class="fadeIn">
+        <p id="sports"></p>
+        </div>
     <br>
     <br>
     <div class="box fadeIn">
@@ -256,5 +277,6 @@
 
     <br>
     <br>
+
 </body>
 </html>
