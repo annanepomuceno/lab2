@@ -154,9 +154,32 @@
             text-align: center;
             font-size: 18px;
         }
+        
+         #birthday-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
     </style>
 
     <script>
+   function myDisplayer(something) {
+            document.getElementById("birthday").innerHTML = "This february 10, i will be turning  " + something;
+        }
+
+        function myBirthday(num1, num2, myCallback) {
+            let sum = num1 + num2;
+            myCallback(sum);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            myBirthday(10, 10, myDisplayer);
+        });
+    
         document.addEventListener("DOMContentLoaded", function() {
             function myFunction() {
                 let likesIceCream = true;
@@ -288,6 +311,9 @@ myFunction();
  <div id="annahobby-box" class="fadeIn">
         <p id="annahobby"></p>
     </div>
+    <div id="birthday-box" class="fadeIn">
+        <p id="birthday"></p>
+        </div>
     <br>
     <br>
     <div class="box fadeIn">
@@ -299,6 +325,6 @@ myFunction();
     <br>
     <br>
   
-
 </body>
 </html>
+
