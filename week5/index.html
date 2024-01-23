@@ -164,9 +164,22 @@
             text-align: center;
             font-size: 18px;
         }
+        
+        #course-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
     </style>
 
     <script>
+   document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("course").innerHTML = "Anna's second course choice is BS Pharmacy";
+    });
    function myDisplayer(something) {
             document.getElementById("birthday").innerHTML = "This february 10, i will be turning  " + something;
         }
@@ -314,6 +327,10 @@ myFunction();
     <div id="birthday-box" class="fadeIn">
         <p id="birthday"></p>
         </div>
+        
+        <div id="course-box" class="fadeIn">
+        <p id="course"></p>
+        </div>
     <br>
     <br>
     <div class="box fadeIn">
@@ -324,7 +341,6 @@ myFunction();
 
     <br>
     <br>
-  
 </body>
 </html>
 
