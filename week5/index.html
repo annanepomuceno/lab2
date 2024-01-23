@@ -136,8 +136,16 @@
             font-size: 18px; 
         }
 
-        /* New style for the sports box */
         #sports-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+         #annahobby-box {
             background-color: white;
             border-radius: 10px;
             padding: 20px;
@@ -192,7 +200,15 @@
 
             document.getElementById("sports").innerHTML =
                 "In my junior high school year, I used to play " + mySports1.name + " and " + mySports2.name;
-        });
+
+            function myFunction() {
+  let HobbyName = "draw, watch series and movies and tiktok ";
+  let text = "Anna likes to " + HobbyName;  
+  document.getElementById("annahobby").innerHTML = text;
+}
+
+myFunction();
+});
     </script>
 </head>
 <body>
@@ -264,9 +280,14 @@
     <div id="story-container" class="fadeIn">
         <p id="story"></p>
     </div>
- <div id="sports-box" class="fadeIn">
+
+    <div id="sports-box" class="fadeIn">
         <p id="sports"></p>
-        </div>
+    </div>
+    
+ <div id="annahobby-box" class="fadeIn">
+        <p id="annahobby"></p>
+    </div>
     <br>
     <br>
     <div class="box fadeIn">
@@ -277,6 +298,7 @@
 
     <br>
     <br>
+  
 
 </body>
 </html>
