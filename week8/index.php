@@ -337,6 +337,10 @@ echo "FACTS ABOUT ANNA!"
         </div>
     <br>
     <br>
+	<h2><?php $x = "Anna likes to play games like pokemon unite and pubg"; echo $x;?></h2>
+	
+	 <br>
+    <br>
     <div class="box fadeIn">
         <p><b>OH NO! WHAT TIME IS IT?</b></p>
         <button type="button" onclick="displayCurrentDate()">SHOW ME THE TIME</button>
