@@ -174,6 +174,15 @@
             text-align: center;
             font-size: 18px;
         }
+		.php-box {
+     background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 24px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
     </style>
 
     <script>
@@ -312,9 +321,11 @@ myFunction();
     </div>
 	<br>
     <br>
-<?php
-echo "FACTS ABOUT ANNA!"
-?>
+<div class="php-box box fadeIn">
+    <?php
+    echo "FACTS ABOUT ANNA!";
+    ?>
+</div>
     <br>
     <br>
     <div id="story-container" class="fadeIn">
@@ -363,6 +374,14 @@ function myFavgames() {
 myFavgames();
 ?> 
 
+<br>
+<br>
+    <br>
+<?php
+$str = "My height is 5'7";
+$pattern = "/5'7/i";
+echo preg_replace($pattern, 5, $str);
+?>
 <br>
 <br>
     <br>
