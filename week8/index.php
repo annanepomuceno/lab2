@@ -340,6 +340,19 @@ echo "FACTS ABOUT ANNA!"
 	<h2><?php $x = "Anna likes to play games like pokemon unite and pubg"; echo $x;?></h2>
 	
 	 <br>
+    <?php
+
+$txt1 = "baby sister who turned ";
+$x = 3;
+$y = 2;
+
+
+echo "Anna have a " . $txt1;
+echo $x + $y;
+?>
+
+<br>
+<br>
     <br>
     <div class="box fadeIn">
         <p><b>OH NO! WHAT TIME IS IT?</b></p>
