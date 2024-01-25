@@ -354,6 +354,18 @@ echo $x + $y;
 <br>
 <br>
     <br>
+	
+<?php
+function myFavgames() {
+  echo "Anna's favorite games are The Plague tale, Pokemon and The last of us";
+}
+
+myFavgames();
+?> 
+
+<br>
+<br>
+    <br>
     <div class="box fadeIn">
         <p><b>OH NO! WHAT TIME IS IT?</b></p>
         <button type="button" onclick="displayCurrentDate()">SHOW ME THE TIME</button>
