@@ -184,6 +184,16 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             color: #ff6b6b;
         }
+		 .text-container {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+		
     </style>
 
     <script>
@@ -322,67 +332,39 @@ myFunction();
     </div>
 	<br>
     <br>
-<h2><div class="php-box box fadeIn">
-    <?php
-    echo "FACTS ABOUT ANNA!";
-    ?> </h2>
+<div class="text-container">
+    <h2>Anna likes to play games like pokemon unite and pubg</h2>
 </div>
-    <br>
-    <br>
-    <div id="story-container" class="fadeIn">
-        <p id="story"></p>
-    </div>
 
-    <div id="sports-box" class="fadeIn">
-        <p id="sports"></p>
-    </div>
-    
- <div id="annahobby-box" class="fadeIn">
-        <p id="annahobby"></p>
-    </div>
-    <div id="birthday-box" class="fadeIn">
-        <p id="birthday"></p>
-        </div>
-        
-        <div id="course-box" class="fadeIn">
-        <p id="course"></p>
-        </div>
-    <br>
-    <br>
-	<h2><?php $x = "Anna likes to play games like pokemon unite and pubg"; echo $x;?></h2>
-	
-	 <br>
+<div class="text-container">
     <?php
+    $txt1 = "baby sister who turned ";
+    $x = 3;
+    $y = 2;
 
-$txt1 = "baby sister who turned ";
-$x = 3;
-$y = 2;
+    echo "Anna have a " . $txt1;
+    echo $x + $y;
+    ?>
+</div>
 
+<div class="text-container">
+    <?php
+    function myFavgames() {
+      echo "Anna's favorite games are The Plague tale, Pokemon and The last of us";
+    }
 
-echo "Anna have a " . $txt1;
-echo $x + $y;
-?>
+    myFavgames();
+    ?> 
+</div>
 
-<br>
-<br>
-    <br>
-	
-<?php
-function myFavgames() {
-  echo "Anna's favorite games are The Plague tale, Pokemon and The last of us";
-}
+<div class="text-container">
+    <?php
+    $str = "My height is 5'7";
+    $pattern = "/5'7/i";
+    echo preg_replace($pattern, 5, $str);
+    ?>
+</div>
 
-myFavgames();
-?> 
-
-<br>
-<br>
-    <br>
-<?php
-$str = "My height is 5'7";
-$pattern = "/5'7/i";
-echo preg_replace($pattern, 5, $str);
-?>
 <br>
 <br>
     <br>
@@ -445,8 +427,35 @@ echo "<br>";
 echo $gender;
 ?>
 
+<br>
+<br>
+<?php
+$servername = "localhost";
+$username = "webprogmi221";
+$password = "g_6bCitLu.ljMK*m";
+$dbname = "webprogmi221";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "INSERT INTO MyGuests ( name, email, website, comment, gender)
+VALUES ('$name', '$email', '$website', '$comment', '$gender')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>
 	
-	
+	<br>
+<br>
 	
 </body>
 </html>
